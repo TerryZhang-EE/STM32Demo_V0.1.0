@@ -583,14 +583,14 @@
               <FilePath>..\BSP\bsp_uart_conf.h</FilePath>
             </File>
             <File>
-              <FileName>bsp_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\bsp_led\bsp_led.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_sys.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_sys\bsp_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_led\bsp_led.c</FilePath>
             </File>
             <File>
               <FileName>bsp_sys_tim.c</FileName>
