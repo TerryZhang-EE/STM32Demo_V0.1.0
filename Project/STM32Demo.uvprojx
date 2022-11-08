@@ -369,7 +369,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\Startup;..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\BSP;..\API;..\APP;..\UI;..\Method</IncludePath>
+              <IncludePath>..\Libraries\Startup;..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\BSP;..\API;..\APP;..\UI;..\METHOD</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -561,9 +561,53 @@
         </Group>
         <Group>
           <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_bsp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\bsp_bsp.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_gpio_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\bsp_gpio_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_tim_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\bsp_tim_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_uart_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\bsp_uart_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_led\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_sys\bsp_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sys_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_sys_tim\bsp_sys_tim.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>API</GroupName>
+          <Files>
+            <File>
+              <FileName>api_main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\API\api_main\api_main.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>APP</GroupName>
@@ -577,9 +621,23 @@
         </Group>
         <Group>
           <GroupName>UI</GroupName>
+          <Files>
+            <File>
+              <FileName>ui_main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UI\ui_main\ui_main.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
-          <GroupName>Method</GroupName>
+          <GroupName>METHOD</GroupName>
+          <Files>
+            <File>
+              <FileName>method_main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Method\method_main\method_main.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

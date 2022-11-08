@@ -10,11 +10,17 @@
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\API",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\APP",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\UI",
-                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\Method",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\METHOD",
                 "D:\\Software\\Keil_v5\\MDK\\ARM\\ARMCC\\include",
                 "D:\\Software\\Keil_v5\\MDK\\ARM\\ARMCC\\include\\rw",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
-                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\APP\\app_main"
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_led",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_sys",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_sys_tim",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\API\\api_main",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\APP\\app_main",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\UI\\ui_main",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\Method\\method_main"
             ],
             "defines": [
                 "STM32F10X_HD",
