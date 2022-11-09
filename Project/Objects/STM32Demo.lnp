@@ -27,6 +27,7 @@
 ".\objects\stm32f10x_usart.o"
 ".\objects\stm32f10x_wwdg.o"
 ".\objects\bsp_sys.o"
+".\objects\bsp_delay.o"
 ".\objects\bsp_led.o"
 ".\objects\bsp_sys_tim.o"
 ".\objects\api_main.o"

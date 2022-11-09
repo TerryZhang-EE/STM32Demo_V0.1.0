@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "bsp_sys.h": "c"
+        "bsp_sys.h": "c",
+        "bsp_delay.h": "c",
+        "stm32f10x.h": "c"
     }
 }
