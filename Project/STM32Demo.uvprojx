@@ -588,6 +588,11 @@
               <FilePath>..\BSP\bsp_sys\bsp_sys.c</FilePath>
             </File>
             <File>
+              <FileName>bsp_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_delay\bsp_delay.c</FilePath>
+            </File>
+            <File>
               <FileName>bsp_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_led\bsp_led.c</FilePath>
