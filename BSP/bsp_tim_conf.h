@@ -2,7 +2,7 @@
  * @Author: Terry Zhang
  * @Date: 2022-11-08 21:45
  * @LastEditors: Terry Zhang
- * @LastEditTime: 2022-11-08 23:38
+ * @LastEditTime: 2022-11-12 22:34
  * @File: bsp_tim_conf.h
  * @Version: V1.0.0
  * @Brief: This file provides all functions about the XXX.
@@ -18,8 +18,11 @@
 #include "stm32f10x.h"
 
 #define SYS_TIM TIM6
-#define SYS_TIM_RCC_Enable()
-#define SYS_TIM_RCC_Disable()
+#define SYS_TIM_RCC_Enable() RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM6, ENABLE);
+#define SYS_TIM_RCC_Disable() RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM6, DISABLE);
 #define SYS_TIM_IRQHandler(void) TIM6_IRQHandler(void)
+
+// void RCC_APB2PeriphResetCmd(uint32_t RCC_APB2Periph, FunctionalState NewState);
+// void RCC_APB1PeriphResetCmd(uint32_t RCC_APB1Periph, FunctionalState NewState);
 
 #endif

@@ -2,7 +2,7 @@
  * @Author: Terry Zhang
  * @Date: 2022-11-08 21:45
  * @LastEditors: Terry Zhang
- * @LastEditTime: 2022-11-08 23:20
+ * @LastEditTime: 2022-11-12 22:45
  * @File: bsp_uart_conf.h
  * @Version: V1.0.0
  * @Brief: This file provides all functions about the XXX.
@@ -18,9 +18,9 @@
 #include "stm32f10x.h"
 
 #define DEBUG_UART UART4
-#define DEBUG_UART_RCC_Enable()
-#define DEBUG_UART_RCC_Disable()
-#define DEBUG_UART_IRQHandler(void)
+#define DEBUG_UART_RCC_Enable() RCC_APB2PeriphResetCmd(RCC_APB2Periph_USART1, ENABLE)
+#define DEBUG_UART_RCC_Disable() RCC_APB2PeriphResetCmd(RCC_APB2Periph_USART1, DISABLE)
+#define DEBUG_UART_IRQHandler(void) USART1_IRQHandler(void)
 
 
 

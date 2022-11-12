@@ -729,9 +729,9 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 F (..\BSP\bsp_bsp.h)(0x636A7268)()
-F (..\BSP\bsp_gpio_conf.h)(0x636A7872)()
-F (..\BSP\bsp_tim_conf.h)(0x636A780E)()
-F (..\BSP\bsp_uart_conf.h)(0x636A7895)()
+F (..\BSP\bsp_gpio_conf.h)(0x636FB0DA)()
+F (..\BSP\bsp_tim_conf.h)(0x636FAF6C)()
+F (..\BSP\bsp_uart_conf.h)(0x636FB19A)()
 F (..\BSP\bsp_sys\bsp_sys.c)(0x636B725D)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I..\Libraries\Startup -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\BSP -I..\API -I..\APP -I..\UI -I..\METHOD-I d:\Work\project\STM32_SPL\01_STM32Demo\STM32Demo_V0.1.0\Project\RTE-I D:\Software\Keil_v5\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I D:\Software\Keil_v5\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\bsp_sys.o --omf_browse .\objects\bsp_sys.crf --depend .\objects\bsp_sys.d)
 I (..\BSP\bsp_sys\bsp_sys.h)(0x636B7378)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x4D783CB4)
