@@ -563,24 +563,24 @@
           <GroupName>BSP</GroupName>
           <Files>
             <File>
-              <FileName>bsp_bsp.h</FileName>
+              <FileName>bsp_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\BSP\bsp_bsp.h</FilePath>
+              <FilePath>..\BSP\bsp_conf\bsp_conf.h</FilePath>
             </File>
             <File>
               <FileName>bsp_gpio_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\BSP\bsp_gpio_conf.h</FilePath>
+              <FilePath>..\BSP\bsp_conf\bsp_gpio_conf.h</FilePath>
             </File>
             <File>
               <FileName>bsp_tim_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\BSP\bsp_tim_conf.h</FilePath>
+              <FilePath>..\BSP\bsp_conf\bsp_tim_conf.h</FilePath>
             </File>
             <File>
               <FileName>bsp_uart_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\BSP\bsp_uart_conf.h</FilePath>
+              <FilePath>..\BSP\bsp_conf\bsp_uart_conf.h</FilePath>
             </File>
             <File>
               <FileName>bsp_sys.c</FileName>

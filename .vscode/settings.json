@@ -2,6 +2,8 @@
     "files.associations": {
         "bsp_sys.h": "c",
         "bsp_delay.h": "c",
-        "stm32f10x.h": "c"
+        "stm32f10x.h": "c",
+        "misc.h": "c",
+        "stm32f10x_gpio.h": "c"
     }
 }

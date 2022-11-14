@@ -14,6 +14,7 @@
                 "D:\\Software\\Keil_v5\\MDK\\ARM\\ARMCC\\include",
                 "D:\\Software\\Keil_v5\\MDK\\ARM\\ARMCC\\include\\rw",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
+                "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_conf",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_sys",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_delay",
                 "d:\\Work\\project\\STM32_SPL\\01_STM32Demo\\STM32Demo_V0.1.0\\BSP\\bsp_led",
