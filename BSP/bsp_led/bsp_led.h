@@ -2,7 +2,7 @@
  * @Author: Terry Zhang
  * @Date: 2022-11-08 21:46
  * @LastEditors: Terry Zhang
- * @LastEditTime: 2022-11-16 01:40
+ * @LastEditTime: 2022-11-16 02:28
  * @File: bsp_led.h
  * @Version: V1.0.0
  * @Brief: This file provides all functions about the XXX.
@@ -16,6 +16,7 @@
 #define __BSP_LED_H
 
 #include "stm32f10x.h"
+#include "bsp_conf/bsp_gpio_conf.h"
 
 #define LED_SUM 4
 
@@ -24,10 +25,14 @@
 #define LED2 LED_Array[2]
 #define LED3 LED_Array[3]
 
+#define CMD_LED_IDLE 0x00
+#define CMD_LED_ENABLE 0x10
+#define CMD_LED_DISABLE 0x20
+
 typedef struct
 {
     uint16_t GPIO_Pinx;
-    GPIO_TypeDef GPIOx;
+    GPIO_TypeDef *GPIOx;
 
     uint8_t CMD;
     uint16_t Data;
@@ -37,5 +42,11 @@ typedef struct
 } LED_Conf;
 
 extern LED_Conf LED_Array[LED_SUM];
+
+void BSP_LED_GPIO_Init(LED_Conf *LED_Struct);
+void BSP_LED_Init(void);
+void BSP_LED_Enable(LED_Conf *LED_Struct);
+void BSP_LED_Disable(LED_Conf *LED_Struct);
+void BSP_LED_Conf(LED_Conf *LED_Struct, uint8_t CMD, uint16_t Data);
 
 #endif

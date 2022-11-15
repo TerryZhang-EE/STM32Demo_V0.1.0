@@ -17,9 +17,9 @@
 
 #include "stm32f10x.h"
 
-#include "bsp_gpio_conf.h"
-#include "bsp_tim_conf.h"
-#include "bsp_uart_conf.h"
+// #include "bsp_gpio_conf.h"
+// #include "bsp_tim_conf.h"
+// #include "bsp_uart_conf.h"
 
 #include "bsp_sys/bsp_sys.h"
 
