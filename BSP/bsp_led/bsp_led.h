@@ -2,7 +2,7 @@
  * @Author: Terry Zhang
  * @Date: 2022-11-08 21:46
  * @LastEditors: Terry Zhang
- * @LastEditTime: 2022-11-14 19:32
+ * @LastEditTime: 2022-11-16 01:40
  * @File: bsp_led.h
  * @Version: V1.0.0
  * @Brief: This file provides all functions about the XXX.
@@ -32,7 +32,7 @@ typedef struct
     uint8_t CMD;
     uint16_t Data;
 
-    FunctionalState Flag_ON;
+    FlagStatus Flag_Enable;
 
 } LED_Conf;
 

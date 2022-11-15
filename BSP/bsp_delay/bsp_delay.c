@@ -1,21 +1,10 @@
-#include "delay.h"
+#include "bsp_delay.h"
 ////////////////////////////////////////////////////////////////////////////////// 	 
 //如果需要使用OS,则包括下面的头文件即可.
 #if SYSTEM_SUPPORT_OS
 #include "includes.h"					//ucos 使用	  
 #endif
-//////////////////////////////////////////////////////////////////////////////////	 
-//本程序只供学习使用，未经作者许可，不得用于其它任何用途
-//ALIENTEK STM32开发板
-//使用SysTick的普通计数模式对延迟进行管理（适合STM32F10x系列）
-//包括delay_us,delay_ms
-//正点原子@ALIENTEK
-//技术论坛:www.openedv.com
-//创建日期:2010/1/1
-//版本：V1.8
-//版权所有，盗版必究。
-//Copyright(C) 广州市星翼电子科技有限公司 2009-2019
-//All rights reserved
+
 //********************************************************************************
 //V1.2修改说明
 //修正了中断中调用出现死循环的错误
@@ -125,7 +114,7 @@ void SysTick_Handler(void)
 //当使用OS的时候,此函数会初始化OS的时钟节拍
 //SYSTICK的时钟固定为HCLK时钟的1/8
 //SYSCLK:系统时钟
-void delay_init()
+void Delay_Init()
 {
 #if SYSTEM_SUPPORT_OS  							//如果需要支持OS.
 	u32 reload;
@@ -150,7 +139,7 @@ void delay_init()
 #if SYSTEM_SUPPORT_OS  							//如果需要支持OS.
 //延时nus
 //nus为要延时的us数.		    								   
-void delay_us(u32 nus)
+void Delay_Us(u32 nus)
 {		
 	u32 ticks;
 	u32 told,tnow,tcnt=0;
@@ -174,7 +163,7 @@ void delay_us(u32 nus)
 }
 //延时nms
 //nms:要延时的ms数
-void delay_ms(u16 nms)
+void Delay_Ms(u16 nms)
 {	
 	if(delay_osrunning&&delay_osintnesting==0)	//如果OS已经在跑了,并且不是在中断里面(中断里面不能任务调度)	    
 	{		 
@@ -189,7 +178,7 @@ void delay_ms(u16 nms)
 #else //不用OS时
 //延时nus
 //nus为要延时的us数.		    								   
-void delay_us(u32 nus)
+void Delay_Us(u32 nus)
 {		
 	u32 temp;	    	 
 	SysTick->LOAD=nus*fac_us; 					//时间加载	  		 
@@ -208,7 +197,7 @@ void delay_us(u32 nus)
 //nms<=0xffffff*8*1000/SYSCLK
 //SYSCLK单位为Hz,nms单位为ms
 //对72M条件下,nms<=1864 
-void delay_ms(u16 nms)
+void Delay_Ms(u16 nms)
 {	 		  	  
 	u32 temp;		   
 	SysTick->LOAD=(u32)nms*fac_ms;				//时间加载(SysTick->LOAD为24bit)

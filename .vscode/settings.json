@@ -4,6 +4,7 @@
         "bsp_delay.h": "c",
         "stm32f10x.h": "c",
         "misc.h": "c",
-        "stm32f10x_gpio.h": "c"
+        "stm32f10x_gpio.h": "c",
+        "bsp_led.h": "c"
     }
 }
