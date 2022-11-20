@@ -30,6 +30,7 @@
 ".\objects\bsp_delay.o"
 ".\objects\bsp_led.o"
 ".\objects\bsp_sys_tim.o"
+".\objects\bsp_uart.o"
 ".\objects\api_main.o"
 ".\objects\app_main.o"
 ".\objects\ui_main.o"

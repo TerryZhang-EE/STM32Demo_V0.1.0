@@ -2,7 +2,7 @@
  * @Author: Terry Zhang
  * @Date: 2022-11-08 21:46
  * @LastEditors: Terry Zhang
- * @LastEditTime: 2022-11-16 02:27
+ * @LastEditTime: 2022-11-20 16:58
  * @File: bsp_led.c
  * @Version: V1.0.0
  * @Brief: This file provides all functions about the XXX.
@@ -29,17 +29,17 @@ void BSP_LED_GPIO_Init(LED_Conf *LED_Struct)
 
 void BSP_LED_Init(void)
 {
-    LED0.GPIO_Pinx = LED0_GPIO_PIN;
-    LED0.GPIOx = LED0_GPIO_PORT;
+    BSP_LED0.GPIO_Pinx = LED0_GPIO_PIN;
+    BSP_LED0.GPIOx = LED0_GPIO_PORT;
 
-    LED1.GPIO_Pinx = LED1_GPIO_PIN;
-    LED1.GPIOx = LED1_GPIO_PORT;
+    BSP_LED1.GPIO_Pinx = LED1_GPIO_PIN;
+    BSP_LED1.GPIOx = LED1_GPIO_PORT;
 
-    LED2.GPIO_Pinx = LED2_GPIO_PIN;
-    LED2.GPIOx = LED2_GPIO_PORT;
+    BSP_LED2.GPIO_Pinx = LED2_GPIO_PIN;
+    BSP_LED2.GPIOx = LED2_GPIO_PORT;
 
-    LED3.GPIO_Pinx = LED3_GPIO_PIN;
-    LED3.GPIOx = LED3_GPIO_PORT;
+    BSP_LED3.GPIO_Pinx = LED3_GPIO_PIN;
+    BSP_LED3.GPIOx = LED3_GPIO_PORT;
 
     LED0_GPIO_RCC_Enable();
     LED1_GPIO_RCC_Enable();

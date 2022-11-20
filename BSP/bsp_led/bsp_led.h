@@ -20,10 +20,10 @@
 
 #define LED_SUM 4
 
-#define LED0 LED_Array[0]
-#define LED1 LED_Array[1]
-#define LED2 LED_Array[2]
-#define LED3 LED_Array[3]
+#define BSP_LED0 LED_Array[0]
+#define BSP_LED1 LED_Array[1]
+#define BSP_LED2 LED_Array[2]
+#define BSP_LED3 LED_Array[3]
 
 #define CMD_LED_IDLE 0x00
 #define CMD_LED_ENABLE 0x10
